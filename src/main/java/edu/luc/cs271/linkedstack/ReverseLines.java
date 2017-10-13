@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ReverseLines {
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     // TODO read successive input lines until EOF, then print out in reverse order
 
 
