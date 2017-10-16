@@ -10,8 +10,8 @@ public class ReverseLines {
 
 
     final Scanner input = new Scanner(System.in);
-    String line;
-    while ((line = input.nextLine()) != null) {
+    while (input.hasNextLine()) {
+      final String line = input.nextLine();
 
 
 
