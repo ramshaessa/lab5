@@ -82,5 +82,7 @@ public class TestLinkedStack {
     final List<String> list = fixture.asList();
     assertEquals(2, list.size());
     assertEquals(Arrays.asList(value2, value1), list);
+    final List<String> list2 = fixture.asList();
+    assertEquals(2, list2.size());
   }
 }
