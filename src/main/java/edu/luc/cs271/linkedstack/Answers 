@@ -1,0 +1,16 @@
+1. Why does LinkedStack not require an explicit constructor?
+Use nodes to create the linked stack so the constructor is not needed. 
+2. What is the time and (extra) space complexity of each of the LinkedStack methods, as well as ReverseLines.main?
+Push: o(1)
+Pop: o(1)
+Peak: o(1)
+Reverse Line: o(n)
+3. How else (not using Node) could we have implemented LinkedStack in such a way that it is still based on a linked list but the asList method uses constant time and space?
+Instead of using node, we could use Arraylist to do the same thing. 
+4. Is it better for push and pop to return the item or the stack itself? Briefly discuss the pros and cons of each design.
+Returning team 
+Pros: Know what item you added or remove 
+Con: cant confirm whether the item has been added or not if the function is not working.
+Stack
+Pro: Confirmation that item was added and removed from list
+Con: Usage of more memory. 
