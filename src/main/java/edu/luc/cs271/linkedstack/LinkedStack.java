@@ -18,7 +18,7 @@ public class LinkedStack<E> implements IStack<E> { //cannot violate the contact.
       // TODO
     Node <E> newNode = new Node <E>(obj, top); //What is the box //creating new node obj does get pass into a new node. The new node is now the top of the stack. It has the data that I wanted and its next node is currently at the top. 
     top = newNode;
-    current size ++;
+    size ++;
     temp = temp.next;//Head needs to connect to the newNode
     return obj; //returns data that I have passed in. 
     //
@@ -41,7 +41,6 @@ public class LinkedStack<E> implements IStack<E> { //cannot violate the contact.
     }else{
         E result = top.data; // returning what was removed// assigning return type to the first element in the linked list
         top = top.next;
-        int size = 0;
         size --;
         temp = temp.next;//Now the top of the stack is what the next element. Removing the top node.  initializes top as the next node in linked list 
         return result; // return result
@@ -64,22 +63,20 @@ public class LinkedStack<E> implements IStack<E> { //cannot violate the contact.
     // TODO implement using an ArrayList preallocated with the right size (create arraylist that has right capacity for the current stack)
     //create new arraylist 
     List<E> list = new ArrayList<>(size);
-    Node<E> temp = top
+    Node<E> temp = top;
 
-    LinkedStack<> myStack = new LinkedStack(size);
-    while (temp.next != null) {
+    //LinkedStack<> myStack = new LinkedStack(size);
+    while (temp != null) {
         
-        myStack.push(temp.data);
+        list.add(temp.data);
+        temp = temp.next; 
     
-    }
-        while (!myStack.isEmpty()) {
-
-        list.add(myStack.pop());
     
-    }
+    
      
-        return list;
+       
 }
+        return list;
 
     // TODO add any instance variable(s) required to support this (add another field to address this TODO item)
     //creating new list
